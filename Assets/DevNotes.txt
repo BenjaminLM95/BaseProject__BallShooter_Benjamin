@@ -1,0 +1,61 @@
+﻿
+Sam Robichaud 
+NSCC Truro 2024
+This work is licensed under CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+═════ TODO: High Priority ══════
+
+• Bugfix: Investigate stuttering of AimGuide. seems to only happening when entering AimMode the 2nd time in a level.
+
+═════ TODO: Mid Priority ══════
+
+• QOL: Add Debug function to skip between levels, to make tesing levels easier.
+• QOL: Switch to using New Input System, allows for simpler switching between different input devices, Gamepad vs Keyboard/Mouse
+
+══════ TODO: Low Priority (Nice to Have) ══════
+
+• Improvement: Improve visuals of Gameplay UI
+• Improvement: Improve visuals of UI on all UI Panels	
+• Improvement: adjust MainMenu Ball Spawner Sequence. When the level first loads the initial ball spawn above the play sequence and cast shadows as they fall. Extend the ramp and have ball spawn further up the ramp so the shadows do not appear until the balls are in view.
+• Improvement: Update aiming guide visual.
+• Improvement: Add celebration sequence for end of level (VFX, Anim, SFX).
+• Improvement: Add Trail effect when the ball is rolling ball.
+• Improvement: Find a nicer ball mesh & texture.
+• Improvement: Expand Ball Control, player can modify how much power to apply to ball shot.
+• Improvement: Add Background Music.
+• Improvement: Add SFX support for game events (add public slots to allow player to swap out SFX).
+• Improvement: Add Prefabs for gameplay mechanics (Ex: Boost pad, Jump Pad, Slow pad, Destruction etc).
+• Improvement: Add Attract mode to randomly change level and show camera movement across levels, perhaps even randomize some gameplay...	
+• Improvement: as an add on to ATTRACT mode... ability to dynamically record a playthrough of level...
+
+
+════ COMPLETED ═════
+
+• Sept/18/2024: Bugfix: [Contributer: Daniel Nascimento] Corrected bug with Cinemachine Camera not matching position/orientation of the StartPosition Gizmo (See BallManager.cs for details).
+• August/24/2024: QOL: Updated visual of StartPostion Gizmo so its easier for level designer to see facing.
+• August/23/2024: Improvement: Seperated out GameStateManager into its own object in the GamePrefab to make it easier to find and manage in the scene hierarchy.
+• August/22/2024: Bugfix: Mouse cursor hidden ruring gameplay states , Rolling & Aim.
+• August/21/2024: Refactor to a cleaner State Machine (Significant Revision).
+• August/21/2024: Bugfix: LevelManager "LoadNextLevel()" to use total scene count instead of hard coded value.
+• August/20/2024: Fix camera collision - Changed to use Cinemachine Camera System.
+• August/02/2024: Corrected bugs with the rolling state, along with a few more corrections to the overall State Machine refactor.
+• August/02/2024: Started State Machine refactor... some bugs to resolve. 
+• July/31/2024: Changed DevNotes to .txt instead of .cs
+• July/31/2024: Created basic script structure for Updated State Machine
+• Pre 2024: Title Screen
+• Pre 2024: General Screen flow
+• Pre 2024: on screen instructions
+• Pre 2024: Fix aim guide rotation by destroying the object on shoot, the reinstantiating on aim mode
+• Pre 2024: block out controls while ball is rolling
+• Pre 2024: triggerm volume for end game level
+• Pre 2024: return control when velocity goes below a certain threshold
+• Pre 2024: Level Manager
+• Pre 2024: start position for every level
+• Pre 2024: add Singleton Pattern to carry GameManager between levels
+• Pre 2024: add slowdown when velocity goes below a certain threshold
+• Pre 2024: add trigger volume below level to catch stray balls
+
+
+
+
+
